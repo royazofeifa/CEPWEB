@@ -2,6 +2,12 @@
 
 Propuesta independiente en HTML, CSS y JavaScript. No cambia el sitio oficial.
 
+## Ver la web
+
+**[Abrir el sitio del colegio](https://royazofeifa.github.io/CEPWEB/)**
+
+Esta es la misma propuesta visual publicada en Sites. El código completo se encuentra en `dist/`. GitHub Actions publica esa carpeta automáticamente al actualizar `main`; `github-pages.cjs` adapta las rutas al prefijo `/CEPWEB/` para conservar navegación, fotografías, estilos y scripts.
+
 ## Abrir localmente
 
 Se requiere Node.js. Desde esta carpeta ejecutar `node server.cjs` y abrir http://127.0.0.1:4173. No abrir index.html con doble clic: los enlaces conservan las rutas del dominio.
