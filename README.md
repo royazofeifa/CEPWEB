@@ -23,13 +23,15 @@ Se requiere Node.js. Desde esta carpeta ejecutar `node server.cjs` y abrir http:
 
 ## Funciones y límites
 
-Los cinco videos se insertan desde el Facebook oficial con su SDK. Se solicita reproducción automática y se silencia cada reproductor al estar listo. Existe pausa global, filtros y enlace al original. La configuración del navegador, Facebook y su disponibilidad pueden impedir la reproducción. No hay MP4 locales; no se garantiza autoplay en todos los dispositivos. Se respeta la preferencia de movimiento reducido.
+Los cinco videos públicos del Facebook oficial se sirven como archivos MP4 locales en `dist/assets/videos/`. El reproductor HTML usa autoplay, muted, loop y playsinline, con volumen cero. Se reproducen al aparecer en pantalla y se pausan al salir, al ocultar la pestaña o al usar la pausa global. Los filtros y los enlaces a Facebook se conservan. Si el navegador rechaza autoplay, aparece un botón para iniciar el video sin sonido. Se respeta la preferencia de movimiento reducido. No se puede anular una restricción de reproducción impuesta por el sistema del teléfono.
+
+Las fotografías de portada cambian cada 3 segundos en pantallas de hasta 760 px y cada 5,5 segundos en pantallas mayores. Conservan controles manuales, pausa y respeto por movimiento reducido.
 
 La consulta prepara un enlace a WhatsApp; no guarda información ni envía mensajes automáticamente. Teléfono y correo provienen del sitio actual. La matrícula dirige al WootIT enlazado por la web oficial. No se prueba el envío de una matrícula ni se modifican datos del portal. Confirmar con el colegio el período de inscripción, los cupos y los datos institucionales antes de sustituir el dominio oficial.
 
 Las fotos de reserva de las tarjetas son imágenes institucionales de referencia; no son fotogramas verificados de cada video. Los enlaces identifican los videos reales de robótica, fútbol, ciencias, banda y orientación vocacional. No se encontró un video de competencia matemática entre los cinco enlaces suministrados; matemáticas se incluye como área educativa sin inventar resultados.
 
-Para una reproducción visual sin interfaz de Facebook y más control sobre autoplay, sustituir las inserciones por archivos MP4 originales autorizados usando video con autoplay, muted, loop y playsinline.
+Los MP4 fueron obtenidos de las fuentes de reproducción públicas de las cinco publicaciones proporcionadas por el usuario. Se conserva el enlace a cada publicación original. Reemplazar estos archivos por nuevas versiones permite actualizar los videos sin depender del SDK de Facebook.
 
 ## Fuentes
 
